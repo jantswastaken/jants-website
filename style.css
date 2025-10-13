@@ -35,14 +35,13 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Inter", sans-serif;
   background-color: white;
   overflow-x: hidden;
-  overflow: hidden !important;
   width: 100%;
 }
 
@@ -540,6 +539,7 @@ body {
     width: auto;
   }
 }
+
 
 
 
