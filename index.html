@@ -319,9 +319,10 @@
           }
         );
 
-        // Pause on hover
-        track.addEventListener("mouseenter", () => animation.pause());
-        track.addEventListener("mouseleave", () => animation.play());
+        if (!('ontouchstart' in window)) {
+          track.addEventListener("mouseenter", () => animation.pause());
+          track.addEventListener("mouseleave", () => animation.play());
+          }
       });
     }
 
